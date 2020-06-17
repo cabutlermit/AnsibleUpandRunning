@@ -4,6 +4,9 @@ private_key
 #  Local .terraform directories
 **/.terraform/*
 
+# Local .vagrant directories
+**/.vagrant/*
+
 # .tfstate files
 *.tfstate
 *.tfstate.*
