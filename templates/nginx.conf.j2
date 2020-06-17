@@ -1,14 +1,14 @@
-# Template from Ansible "web-notls.yml" playbook
+# Template from Ansible "web-tls.yml" playbook
 #
 server {
 	listen 80 default_server;
 	listen [::]:80 default_server ipv6only=on;
-
-    listen 443 ssl;
+    listen 443;
 
 	root /usr/share/nginx/html;
 	index index.html index.htm;
 
+    ssl on;
 	server_name {{ server_name }};
     ssl_certificate {{ cert_file }};
     ssl_certficate_key {{ key_file }};
