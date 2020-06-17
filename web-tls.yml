@@ -25,7 +25,7 @@
       notify: restart nginx
 
     - name: copy nginx config file
-      copy: src=files/nginx.conf.j2 dest={{ conf_file }}
+      template: src=templates/nginx.conf.j2 dest={{ conf_file }}
     
     - name: enable configuration
       file: dest=/etc/nginx/sites-enabled/default src={{ conf_file }} state=link
