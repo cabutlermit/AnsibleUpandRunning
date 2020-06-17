@@ -21,3 +21,5 @@ private_key
 .vagrant/machines/default/virtualbox/id
 .vagrant/machines/default/virtualbox/action_set_name
 .vagrant/machines/default/virtualbox/action_provision
+files/nginx.crt
+files/nginx.key
