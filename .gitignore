@@ -1,1 +1,16 @@
+# Ignore private keys!
 private_key
+
+#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+*.log*
+
+# .tfvars files
+*.tfvars
+
+# ignore the obnoxious .DS_Store file
+.DS_Store
