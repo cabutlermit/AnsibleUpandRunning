@@ -1,0 +1,21 @@
+# Template from Ansible "web-notls.yml" playbook
+#
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server ipv6only=on;
+
+    listen 443 ssl;
+
+	root /usr/share/nginx/html;
+	index index.html index.htm;
+
+	server_name {{ server_name }};
+    ssl_certificate {{ cert_file }};
+    ssl_certficate_key {{ key_file }};
+
+	location / {
+		# First attempt to serve request as file, then
+		# as directory, then fall back to displaying a 404.
+		try_files $uri $uri/ =404;
+	}
+}
