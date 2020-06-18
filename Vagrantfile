@@ -30,13 +30,13 @@ Vagrant.configure("2") do |config|
   end
   config.vm.define "vagrant2" do |vagrant2|
     vagrant2.vm.box = "ubuntu/trusty64"
-    vagrant2.vm.network "forwarded_port", guest: 80, host: 8080
-    vagrant2.vm.network "forwarded_port", guest: 443, host: 8443
+    vagrant2.vm.network "forwarded_port", guest: 80, host: 8081
+    vagrant2.vm.network "forwarded_port", guest: 443, host: 8444
   end
   config.vm.define "vagrant3" do |vagrant3|
     vagrant3.vm.box = "ubuntu/trusty64"
-    vagrant3.vm.network "forwarded_port", guest: 80, host: 8080
-    vagrant3.vm.network "forwarded_port", guest: 443, host: 8443
+    vagrant3.vm.network "forwarded_port", guest: 80, host: 8082
+    vagrant3.vm.network "forwarded_port", guest: 443, host: 8445
   end
 
   # Create a forwarded port mapping which allows access to a specific port
