@@ -6,6 +6,7 @@ private_key
 
 # Local .vagrant directories
 **/.vagrant/*
+./vagrant/*
 
 # .tfstate files
 *.tfstate
@@ -17,17 +18,5 @@ private_key
 
 # ignore the obnoxious .DS_Store file
 .DS_Store
-.vagrant/machines/default/virtualbox/index_uuid
-.vagrant/machines/default/virtualbox/id
-.vagrant/machines/default/virtualbox/action_set_name
-.vagrant/machines/default/virtualbox/action_provision
 files/nginx.crt
 files/nginx.key
-.vagrant/machines/default/virtualbox/action_provision
-.vagrant/machines/default/virtualbox/action_set_name
-.vagrant/machines/default/virtualbox/box_meta
-.vagrant/machines/default/virtualbox/creator_uid
-.vagrant/machines/default/virtualbox/id
-.vagrant/machines/default/virtualbox/index_uuid
-.vagrant/machines/default/virtualbox/synced_folders
-.vagrant/machines/default/virtualbox/vagrant_cwd
