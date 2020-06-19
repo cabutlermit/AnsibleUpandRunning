@@ -1,0 +1,8 @@
+# [staging:vars]
+db_primary_host=quebec.example.com
+db_primary_port=5432
+db_name=widget_staging
+db_user=widgetuser
+db_password=L@4Ryz8cRUXedj
+rabbitmq_host=quebec.example.com
+rabbitmq_port=5672
